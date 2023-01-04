@@ -3,4 +3,3 @@ def userid():
     with open(r"userinfo.txt", 'r') as readrows:
         x = len(readrows.readlines())
         return x+1
-userid()

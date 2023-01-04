@@ -1,6 +1,6 @@
 import re                #import regix
 from userid import *     #import userid.py file
-def registeration(userid=userid()): #registeration with argument of the id which given from userid.py
+def registeration(): #registeration with argument of the id which given from userid.py
     #Mobile vaidation
     def checkmobile(mobile):
         mob = r'01[0-9]{9}$'
@@ -10,8 +10,8 @@ def registeration(userid=userid()): #registeration with argument of the id which
             return False
     #Mail validation
     def checkemail(mail):
-        ml = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
-        if re.match(ml, mail):
+        email = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
+        if re.match(email, mail):
             return True
         else:
             return False
@@ -76,7 +76,7 @@ def registeration(userid=userid()): #registeration with argument of the id which
     except Exception as e:
         print(e)
     else:
-        userinfo = f"{userid}:{fname}:{lname}:{mail}:{passwd}:{mob}\n"
+        userinfo = f"{userid()}:{fname}:{lname}:{mail}:{passwd}:{mob}\n"
         print(userinfo)
         fileobject.write(userinfo)
         fileobject.close()
