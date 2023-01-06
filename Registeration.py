@@ -30,44 +30,44 @@ def registeration(): #registeration with argument of the id which given from use
             return False
 
     while True:
-        Firstname = input("please enter your first name : ")
+        Firstname = input("Please , Enter Your First Name : \n ")
         if checkname(Firstname) == True:
             fname = Firstname.capitalize()
         else:
-            print("Wrong Entry ! Please Enter a valid name")
+            print("WRONG ENTRY !!! Please , Enter a valid name")
             continue
         while True:
-            Lastname = input("please enter your last name : ")
+            Lastname = input("Please Enter Your Last Name : ")
             if checkname(Lastname) == True:
                 lname = Lastname.capitalize()
                 break
             else:
-                print("Wrong Entry ! Please Enter a valid name")
+                print("WRONG ENTRY !!! Please , Enter a Valid Name")
                 continue
         while True:
-            Mail = input("please enter your E-mail : ")
+            Mail = input("Please , Enter Your E-mail : ")
             if checkemail(Mail) == True:
                 mail = Mail
                 break
             else:
-                print("Wrong Entry")
+                print("WRONG ENTRY !!! Please , Enter A Valid Email Address !")
                 continue
         while True:
-            password = input("Please Enter Your Password :")
-            confirmpassword = input("please re-enter your password :")
+            password = input("Please , Enter Your Password :")
+            confirmpassword = input("Please , Enter Your Password Again  :")
             if passwordmatch(password, confirmpassword) == True:
                 passwd = password
                 break
             else:
-                print("Not matching passwords!!")
+                print("WRONG MATCHING PASSWORDS !!!")
                 continue
         while True:
-            Mobile = input("please enter your mobile number : ")
+            Mobile = input("Please Enter Your Mobile Number : ")
             if checkmobile(Mobile) == True:
                 mob = Mobile
                 break
             else:
-                print("wrong mobile number!")
+                print("Wrong Mobile Number!!!")
                 continue
         break
 

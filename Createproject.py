@@ -51,4 +51,3 @@ def createproject(userid):
         else:
             print("Wrong Date Value!!!")
             continue
-createproject(2)
