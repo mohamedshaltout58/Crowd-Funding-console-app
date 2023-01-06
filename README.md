@@ -21,4 +21,3 @@
 <p>&bull; User can view all projects</p>
 <p>&bull; User can edit his own projects</p>
 <p>&bull; User can delete his own project</p>
-<p>&bull; User can search for a project using date</p>
